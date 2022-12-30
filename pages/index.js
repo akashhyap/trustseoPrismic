@@ -91,13 +91,7 @@ const Index = ({ articles, navigation, settings, home }) => {
         <title>{prismicH.asText(settings.data.name)}</title>
       </Head>
       <Home home={home} />
-      {/* <Bounded size="wide">
-        <ul className="grid grid-cols-1 gap-16">
-          {articles.map((article) => (
-            <Article key={article.id} article={article} />
-          ))}
-        </ul>
-      </Bounded> */}
+    
       test
     </Layout>
   );
@@ -108,12 +102,7 @@ export default Index;
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
 
-  const articles = await client.getAllByType("article", {
-    orderings: [
-      { field: "my.article.publishDate", direction: "desc" },
-      { field: "document.first_publication_date", direction: "desc" },
-    ],
-  });
+
   const navigation = await client.getSingle("navigation");
   const settings = await client.getSingle("settings");
 
@@ -121,7 +110,6 @@ export async function getStaticProps({ previewData }) {
 
   return {
     props: {
-      articles,
       navigation,
       settings,
       home,
