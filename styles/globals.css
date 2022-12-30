@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://p.typekit.net/p.css?s=1&k=lue6wew&ht=tk&f=25163&a=14350217&app=typekit&e=css");
+
+@font-face {
+    font-family: "fatfrank";
+    src: url("https://use.typekit.net/af/2aa411/00000000000000007735a612/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/2aa411/00000000000000007735a612/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/2aa411/00000000000000007735a612/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-heading-scale: 0.9090909090909091;
+    --primary-bg-color: #f0f2f3;
+    --primary-text-color: #676767;
+    --danger-color: #ad0505;
+    --success-color: #4CAF50;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    font-size: 22px;
+}
+
+body p {
+    color: var(--primary-text-color);
+}
+
+h2,
+h3 {
+    font-size: 2.8rem;
+}
+
+h1 {
+    font-size: 3.4rem;
+    font-weight: 600;
+    -webkit-text-fill-color: inherit;
+}
+
+h2,
+h3 {
+    font-size: 2.8rem;
+}
+
+h1 {
+    font-size: 3.4rem;
+    font-weight: 600;
+    -webkit-text-fill-color: inherit;
+}
+
+h1.splash,
+h2.splash-h2 {
+    font-family: fatfrank, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+@media screen and (min-width:1300px) {
+
+    h1.splash,
+    h2.splash-h2 {
+        line-height: 1.0;
+    }
+
+    h1.splash {
+        margin-bottom: 8px;
+    }
+}
+
+h1 .your,
+h1 .local {
+    font-size: calc(var(--font-heading-scale) * 3rem);
+}
+
+h1 .local {
+    text-decoration-line: underline;
+    text-decoration-color: #fcd832;
+}
+
+h1 .las-vegas {
+    font-size: calc(var(--font-heading-scale) * 3.4rem);
+}
+
+h1 .seo-experts {
+    font-size: calc(var(--font-heading-scale) * 2.75rem);
+    text-decoration-line: underline;
+    text-decoration-color: #fcd832;
+}
+
+h2 .we-help-you {
+    font-size: calc(var(--font-heading-scale) * 2.65rem);
+}
+
+h2 .rank-no-1 {
+    font-size: calc(var(--font-heading-scale) * 3.2rem);
+}
+
+
+@media screen and (min-width:1366px) {
+
+    h1 .your,
+    h1 .local {
+        font-size: calc(var(--font-heading-scale) * 4rem);
+    }
+
+    h1 .local {
+        text-decoration-line: underline;
+        text-decoration-color: #fcd832;
+    }
+
+    h1 .las-vegas {
+        font-size: calc(var(--font-heading-scale) * 4.6rem);
+    }
+
+    h1 .seo-experts {
+        font-size: calc(var(--font-heading-scale) * 3.74rem);
+    }
+
+    h2 .we-help-you {
+        font-size: calc(var(--font-heading-scale) * 3.55rem);
+    }
+
+    h2 .rank-no-1 {
+        font-size: calc(var(--font-heading-scale) * 4.3rem);
+    }
+}
+.home .title {
+    text-align: center;
+}
+
+@media screen and (min-width:1024px) {
+    .image_group figure {
+        flex: 1;
+    }
+}
+
+.home_header {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: gradientBG 15s ease infinite;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+}
+
+.home .home_header {
+    margin-top: -102px;
+    padding-top: 72px;
+}
+
+@-webkit-keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header_img {
+    display: flex;
+}
+.header_img img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.home .section_heading, .home .text_description {
+    text-align: center;
+}
+.section_heading h2, .section_heading h3{
+    font-size: calc(var(--font-heading-scale) * 3.1rem);
+    line-height: calc(1 + .23/max(1, var(--font-heading-scale)));
+}
+.beforeScroll {
+    transition: all .3s ease-out;
+}
+.afterScroll {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #1e293b;
+    z-index: 9999;
+    overflow: visible;
+}
+.afterScroll nav li {
+    font-size: 20px;
+}
