@@ -91,7 +91,6 @@ const Index = ({ articles, navigation, settings, home }) => {
         <title>{prismicH.asText(settings.data.name)}</title>
       </Head>
       <Home home={home} />
-      test
     </Layout>
   );
 };
